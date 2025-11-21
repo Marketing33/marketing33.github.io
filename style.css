@@ -188,3 +188,33 @@ footer {
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
+.top-agencies {
+    margin: 60px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.top-agencies h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #111;
+}
+
+.top-agencies ol {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.top-agencies li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.top-agencies li a:hover {
+    color: #0056b3;
+}
+
