@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>أضف وكالتك — Digital Marketing</title>
+<meta name="description" content="أضف وكالتك التسويقية إلى دليل Digital Marketing واحصل على ظهور أكبر لدى العملاء.">
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,17 +20,51 @@
 </header>
 
 <div class="container">
-    <h2>أضف وكالتك</h2>
 
-    <form>
-        <label>اسم الوكالة</label><br>
-        <input style="width:100%;padding:10px;"><br><br>
+    <h2>أضف وكالتك إلى الدليل</h2>
+    <p style="margin-bottom:25px; color:#555;">
+        قم بإضافة وكالتك التسويقية ليتم عرضها ضمن أفضل الوكالات العربية في منصة Digital Marketing.
+    </p>
 
-        <label>الوصف المختصر</label><br>
-        <textarea style="width:100%;padding:10px;"></textarea><br><br>
+    <div class="card">
 
-        <a class="btn">إرسال</a>
-    </form>
+        <!-- FormSubmit يبدأ هنا -->
+        <form action="https://formsubmit.co/sskska@gmail.com" method="POST">
+
+            <!-- منع CAPTCHA -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- رسالة نجاح بعد الإرسال -->
+            <input type="hidden" name="_next" value="https://marketing33.github.io/success.html">
+
+            <label>اسم الوكالة *</label>
+            <input type="text" name="agency_name" required
+            placeholder="مثال: Viva Media Creative"
+            style="width:100%; padding:12px; margin:8px 0;">
+
+            <label>البريد الإلكتروني *</label>
+            <input type="email" name="email" required
+            placeholder="example@agency.com"
+            style="width:100%; padding:12px; margin:8px 0;">
+
+            <label>موقع الوكالة</label>
+            <input type="url" name="website"
+            placeholder="https://agency.com"
+            style="width:100%; padding:12px; margin:8px 0;">
+
+            <label>الوصف المختصر *</label>
+            <textarea name="description" required
+            placeholder="اكتب وصفاً احترافياً مختصراً عن وكالتك هنا..."
+            style="width:100%; padding:12px; height:120px; margin:8px 0;"></textarea>
+
+            <button type="submit" class="btn" style="border:none; cursor:pointer; margin-top:10px;">
+                إرسال الطلب
+            </button>
+
+        </form>
+        <!-- FormSubmit ينتهي هنا -->
+
+    </div>
 
 </div>
 
