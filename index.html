@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Default (Homepage) SEO -->
+  <title>Viva Media Creative — شبكة وكالات رقمية عربية فاخرة</title>
+  <meta name="description" content="Viva Media Creative — شبكة وكالات رقمية عربية مميزة. اكتشف أفضل 8–12 وكالة عربية، ملفات تفصيلية، تقييمات، وعروض تصميم و تسويق رقمي احترافية.">
+  <meta name="keywords" content="وكالة رقمية, تصميم مواقع, تسويق رقمي, سيو, Viva Media Creative, وكالات عربية, Agency Network">
+  <meta name="author" content="Viva Media Creative">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:site_name" content="Viva Media Creative">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Viva Media Creative — شبكة وكالات رقمية عربية فاخرة">
+  <meta property="og:description" content="اكتشف أفضل وكالات التصميم والتسويق الرقمي العربية — تقييمات، ملفات تعريفية، وفرصة لإضافة وكالتك.">
+  <meta property="og:image" content="/assets/cover-social.png">
+  <meta property="og:locale" content="ar_AR">
+
+  <!-- Structured Data (site) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Viva Media Creative",
+    "url":"https://marketing33.github.io/",
+    "logo":"https://marketing33.github.io/assets/logo.svg",
+    "sameAs":[],
+    "description":"شبكة وكالات رقمية عربية تقدم ملفات تعريفية، تقييمات، وخدمات التسويق الرقمي." 
+  }
+  </script>
+
+  <!-- Basic styles (clean, modern, elegant) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#ff6b6b;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Cairo',system-ui,Arial;padding:0;background:linear-gradient(180deg,#071025 0%,#071026 60%);color:#e6eef6}
+    a{color:inherit;text-decoration:none}
+    header{display:flex;align-items:center;justify-content:space-between;padding:22px 28px;backdrop-filter:blur(6px);}
+    .logo{display:flex;gap:14px;align-items:center}
+    .logo .mark{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#ff9f43,#ff6b6b);display:flex;align-items:center;justify-content:center;font-weight:700;color:#081024}
+    nav{display:flex;gap:12px}
+    nav a{padding:10px 14px;border-radius:10px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;padding:40px 28px}
+    .hero-card{background:var(--glass);border-radius:18px;padding:26px;box-shadow:0 6px 30px rgba(2,6,23,.6)}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:10px}
+    .cover{height:320px;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#071026,#10243a);display:flex;align-items:center;justify-content:center;color:#cfe9ff}
+    .cover h2{font-size:28px;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px}
+    .agency{background:linear-gradient(180deg,#081424,#071024);padding:16px;border-radius:14px}
+    .agency .meta{display:flex;gap:12px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:12px;background:#072233;display:flex;align-items:center;justify-content:center;font-weight:700}
+    .rating{background:#061728;padding:6px 8px;border-radius:10px}
+    footer{padding:28px;text-align:center;color:var(--muted)}
+    .button{background:linear-gradient(90deg,#ff8a65,#ff6b6b);padding:10px 14px;border-radius:12px;color:#071024;font-weight:700}
+    .badge{background:#072233;padding:6px 10px;border-radius:999px;font-weight:700}
+
+    /* Details panel */
+    .panel{max-width:1100px;margin:26px auto;background:linear-gradient(180deg,#081424,#06101a);border-radius:16px;padding:20px}
+    .profile-head{display:flex;gap:20px;align-items:center}
+    form.field{display:flex;flex-direction:column;gap:8px}
+    input,textarea,select{padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    label{color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.cover{height:220px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="mark">VM</div>
+      <div>
+        <div style="font-weight:700">Viva Media Creative</div>
+        <div style="font-size:12px;color:var(--muted)">تقييم أعلى — Digital Agency Network</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#/" onclick="navigate(event,'/')">الرئيسية</a>
+      <a href="#/agencies" onclick="navigate(event,'/agencies')">قائمة الوكالات</a>
+      <a href="#/add" onclick="navigate(event,'/add')">أضف وكالتك</a>
+      <a href="#/contact" onclick="navigate(event,'/contact')">اتصل بنا</a>
+    </nav>
+  </header>
+
+  <main id="app">
+    <!-- Sections are injected by JS routing -->
+  </main>
+
+  <footer>
+    © <span id="year"></span> Viva Media Creative — جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+    // --- Sample agencies (8–12 وكالات عربية معروفة) + SEO descriptions and keywords
+    const agencies = [
+      {
+        id: 'viva-media',
+        name: 'Viva Media Creative',
+        tagline: 'وكالة تصميم وتسويق رقمي متكاملة',
+        city: 'دبي، الإمارات',
+        rating: 4.9,
+        reviews: 128,
+        seoDescription: 'Viva Media Creative — وكالة تسويق رقمي في دبي متخصصة في تصميم المواقع، العلامات التجارية، وإدارة الحملات الإعلانية. خبرة واسعة بالسوق العربي.' ,
+        keywords: ['وكالة رقمية','تصميم','تسويق رقمي','دبي']
+      },
+      {
+        id: 'arabic-digital',
+        name: 'Arabic Digital Studio',
+        tagline: 'تصميم واجهات وتجارب مستخدم متميزة',
+        city: 'القاهرة، مصر',
+        rating: 4.8,
+        reviews: 96,
+        seoDescription: 'Arabic Digital Studio — أفضل فريق واجهات وتجربة مستخدم في القاهرة. خدمات تصميم المنتجات الرقمية وتطوير الويب.' ,
+        keywords: ['UX','UI','تجربة مستخدم','القاهرة']
+      },
+      {
+        id: 'nawa-agency',
+        name: 'Nawa Agency',
+        tagline: 'استراتيجيات محتوى تسويقي',
+        city: 'الرياض، السعودية',
+        rating: 4.7,
+        reviews: 76,
+        seoDescription: 'Nawa Agency — وكالة تسويق محتوى واستراتيجيات رقمية في الرياض. محتوى موجه لتحقيق نمو واضح في الأداء.' ,
+        keywords: ['محتوى','استراتيجية','نمو','الرياض']
+      },
+      {
+        id: 'sahara-creative',
+        name: 'Sahara Creative',
+        tagline: 'حلول العلامة التجارية والهوية',
+        city: 'المنامة، البحرين',
+        rating: 4.6,
+        reviews: 58,
+        seoDescription: 'Sahara Creative — وكالة هوية بصرية وحلول علامة تجارية في الخليج. تصميم شعارات، أدلة علامة تجارية، ومواد تسويقية.' ,
+        keywords: ['هوية بصرية','شعار','تصميم','المنامة']
+      },
+      {
+        id: 'amwaj-studios',
+        name: 'Amwaj Studios',
+        tagline: 'تصوير وتسويق عبر وسائل التواصل',
+        city: 'بيروت، لبنان',
+        rating: 4.5,
+        reviews: 45,
+        seoDescription: 'Amwaj Studios — فريق متخصص في التصوير الإبداعي وخدمات وسائل التواصل الاجتماعي في بيروت.' ,
+        keywords: ['تصوير','وسائل التواصل','بيروت']
+      },
+      {
+        id: 'fajr-digital',
+        name: 'Fajr Digital',
+        tagline: 'نماذج أعمال إلكترونية وتحويل رقمي',
+        city: 'عمان، الأردن',
+        rating: 4.6,
+        reviews: 52,
+        seoDescription: 'Fajr Digital — تحويل رقمي وحلول تجارة إلكترونية في عمان. تطوير متاجر، بوابات دفع، وتحليلات.' ,
+        keywords: ['تجارة إلكترونية','تحويل رقمي','عمان']
+      },
+      {
+        id: 'samak-marketing',
+        name: 'Samak Marketing',
+        tagline: 'إعلانات مدفوعة وإدارة حملات دقيقة',
+        city: 'الدار البيضاء، المغرب',
+        rating: 4.4,
+        reviews: 33,
+        seoDescription: 'Samak Marketing — إدارة حملات إعلانية مدفوعة وتحليلات أداء في المغرب.' ,
+        keywords: ['إعلانات','تحليلات','الدار البيضاء']
+      },
+      {
+        id: 'qalb-studio',
+        name: 'Qalb Studio',
+        tagline: 'استشارات رقمية وإطلاق منتجات',
+        city: 'الخرطوم، السودان',
+        rating: 4.3,
+        reviews: 20,
+        seoDescription: 'Qalb Studio — استشارات رقمية وتوجيه لرواد الأعمال في السودان.' ,
+        keywords: ['استشارات','منتجات','الخرطوم']
+      }
+    ];
+
+    // Utility: format rating stars
+    function stars(r){
+      const full = Math.floor(r);
+      const half = r - full >= 0.5;
+      let s = '★'.repeat(full) + (half? '☆':'' );
+      return s;
+    }
+
+    // Simple client-side routing (hash-based)
+    function navigate(e,path){ if(e) e.preventDefault(); window.location.hash = path; }
+
+    function setMeta({title,description,keywords}){
+      document.title = title || 'Viva Media Creative';
+      const desc = document.querySelector('meta[name="description"]');
+      if(desc) desc.setAttribute('content', description || '');
+      const key = document.querySelector('meta[name="keywords"]');
+      if(key) key.setAttribute('content', (keywords || []).join(', '));
+      // Open Graph
+      const ogTitle = document.querySelector('meta[property="og:title"]'); if(ogTitle) ogTitle.setAttribute('content', title);
+      const ogDesc = document.querySelector('meta[property="og:description"]'); if(ogDesc) ogDesc.setAttribute('content', description);
+    }
+
+    // Render functions
+    function renderHome(){
+      setMeta({
+        title: 'Viva Media Creative — شبكة وكالات رقمية عربية فاخرة',
+        description: 'اكتشف أفضل وكالات التصميم والتسويق الرقمي العربية — تقييمات، ملفات تعريفية، وفرصة لإضافة وكالتك.',
+        keywords: ['شبكة وكالات','وكالة عربية','تسويق رقمي','تصميم']
+      });
+
+      const topAgency = agencies[0];
+      document.getElementById('app').innerHTML = `
+        <section class="hero">
+          <div class="hero-card">
+            <h1>Viva Media Creative — شبكة وكالات رقمية عربية</h1>
+            <p class="lead">تقييم أعلى — عرض أنقى لوكالات التصميم، التسويق، والتحويل الرقمي. استعرض الملفات، راجع التقييمات، وأضف وكالتك بسهولة.</p>
+
+            <div class="grid" style="margin-top:18px">
+              ${agencies.slice(0,6).map(a=>`
+                <article class="agency">
+                  <div class="meta">
+                    <div class="avatar">${a.name.split(' ').map(n=>n[0]).slice(0,2).join('')}</div>
+                    <div>
+                      <div style="font-weight:700">${a.name}</div>
+                      <div style="font-size:13px;color:var(--muted)">${a.tagline} — ${a.city}</div>
+                    </div>
+                    <div style="margin-inline-start:auto;text-align:left">
+                      <div class="rating">${a.rating} ★</div>
+                      <div style="font-size:12px;color:var(--muted)">${a.reviews} تقييم</div>
+                    </div>
+                  </div>
+                  <p style="margin-top:12px;color:var(--muted);font-size:14px">${a.seoDescription}</p>
+                  <div style="display:flex;gap:10px;margin-top:12px">
+                    <a class="button" href="#/agency/${a.id}" onclick="navigate(event,'/agency/${a.id}')">عرض الملف</a>
+                    <a class="badge" href="#/agencies" onclick="navigate(event,'/agencies')">قائمة كاملة</a>
+                  </div>
+                </article>
+              `).join('')}
+            </div>
+          </div>
+
+          <aside>
+            <div class="cover hero-card">
+              <div>
+                <h2>Cover + Logo 🔥</h2>
+                <p style="color:var(--muted);margin-top:8px">تصميم فخم جداً — نمط Digital Agency Network</p>
+                <div style="height:12px"></div>
+                <div style="display:flex;gap:8px;justify-content:center">
+                  <div style="width:120px;height:80px;background:linear-gradient(135deg,#fff1,#ff6b6b);border-radius:12px"></div>
+                  <div style="width:120px;height:80px;background:linear-gradient(135deg,#fff1,#ff9f43);border-radius:12px"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel" style="margin-top:14px">
+              <div style="display:flex;align-items:center;justify-content:space-between">
+                <div>
+                  <div style="font-weight:700">تقييمات</div>
+                  <div style="font-size:13px;color:var(--muted)">آراء العملاء وتجارب موثوقة</div>
+                </div>
+                <div class="badge">${topAgency.rating} ★</div>
+              </div>
+
+              <div style="margin-top:12px">
+                <blockquote style="color:var(--muted);margin:0">"عمل محترف جداً — تصميم مبتكر ونتائج سريعة. أنصح بالتعامل مع Viva Media Creative."</blockquote>
+                <div style="font-size:13px;color:var(--muted);margin-top:8px">— عميل سعيد</div>
+              </div>
+            </div>
+          </aside>
+        </section>
+      `;
+    }
+
+    function renderAgencies(){
+      setMeta({
+        title: 'قائمة الوكالات — Viva Media Creative',
+        description: 'دليل كامل لأفضل الوكالات العربية في التصميم والتسويق الرقمي. قارن بين الوكالات واعرض ملف كل وكالة بالتفصيل.',
+        keywords: ['قائمة وكالات','دليل وكالات','وكالات عربية']
+      });
+      document.getElementById('app').innerHTML = `
+        <section style="padding:20px">
+          <div class="panel">
+            <h2>قائمة الوكالات</h2>
+            <p class="lead">${agencies.length} وكالات عربية مختارة — اختر للاطلاع على الملف الكامل والتقييمات.</p>
+            <div class="grid" style="margin-top:18px">
+              ${agencies.map(a=>`
+                <article class="agency">
+                  <div class="meta">
+                    <div class="avatar">${a.name.split(' ').map(n=>n[0]).slice(0,2).join('')}</div>
+                    <div>
+                      <div style="font-weight:700">${a.name}</div>
+                      <div style="font-size:13px;color:var(--muted)">${a.tagline}</div>
+                      <div style="font-size:13px;color:var(--muted)">${a.city}</div>
+                    </div>
+                    <div style="margin-inline-start:auto;text-align:left">
+                      <div class="rating">${a.rating} ★</div>
+                      <div style="font-size:12px;color:var(--muted)">${a.reviews} تقييم</div>
+                    </div>
+                  </div>
+                  <p style="margin-top:12px;color:var(--muted);font-size:14px">${a.seoDescription}</p>
+                  <div style="display:flex;gap:10px;margin-top:12px">
+                    <a class="button" href="#/agency/${a.id}" onclick="navigate(event,'/agency/${a.id}')">عرض الملف</a>
+                  </div>
+                </article>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    function renderAgencyProfile(id){
+      const a = agencies.find(x=>x.id===id);
+      if(!a){ renderNotFound(); return }
+
+      // Update meta tags for SEO for this agency profile
+      setMeta({
+        title: `${a.name} — ملف وكالة | Viva Media Creative`,
+        description: a.seoDescription,
+        keywords: a.keywords
+      });
+
+      // JSON-LD for LocalBusiness/Organization
+      const ld = {
+        '@context':'https://schema.org',
+        '@type':'ProfessionalService',
+        'name': a.name,
+        'description': a.seoDescription,
+        'aggregateRating':{
+          '@type': 'AggregateRating',
+          'ratingValue': a.rating,
+          'reviewCount': a.reviews
+        },
+        'address':{
+          '@type':'PostalAddress',
+          'addressLocality': a.city
+        }
+      };
+
+      document.getElementById('app').innerHTML = `
+        <section style="padding:20px">
+          <div class="panel">
+            <div class="profile-head">
+              <div style="display:flex;gap:14px;align-items:center">
+                <div class="avatar" style="width:88px;height:88px;border-radius:16px">${a.name.split(' ').map(n=>n[0]).slice(0,2).join('')}</div>
+                <div>
+                  <h2 style="margin:0">${a.name}</h2>
+                  <div style="color:var(--muted)">${a.tagline} — ${a.city}</div>
+                </div>
+              </div>
+              <div style="margin-inline-start:auto;text-align:left">
+                <div style="font-weight:800">${a.rating} ★</div>
+                <div style="color:var(--muted)">${a.reviews} تقييم</div>
+              </div>
+            </div>
+
+            <div style="margin-top:18px">
+              <h3>عن الوكالة</h3>
+              <p style="color:var(--muted)">${a.seoDescription}</p>
+
+              <h3>الخدمات</h3>
+              <ul style="color:var(--muted)">
+                <li>تصميم واجهات ومواقع</li>
+                <li>تسويق رقمي وSEO</li>
+                <li>إدارة حملات إعلانية</li>
+                <li>استشارات وتحليل بيانات</li>
+              </ul>
+
+              <h3>آراء العملاء</h3>
+              <div style="background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;color:var(--muted)">
+                <strong>ممتاز</strong> — خدمتهم كانت سريعة وفهموا هدف المشروع بشكل ممتاز.
+              </div>
+
+              <div style="margin-top:14px;display:flex;gap:8px">
+                <a class="button" href="#/contact" onclick="navigate(event,'/contact')">تواصل مع الوكالة</a>
+                <a class="badge" href="#/agencies" onclick="navigate(event,'/agencies')">عودة للقائمة</a>
+              </div>
+            </div>
+          </div>
+
+          <script type="application/ld+json">${JSON.stringify(ld)}</script>
+        </section>
+      `;
+    }
+
+    function renderAdd(){
+      setMeta({
+        title: 'أضف وكالتك — Viva Media Creative',
+        description: 'قدّم وكالتك إلى دليل Viva Media Creative. املأ النموذج لإدراج ملف تعريف وكالتك في قائمة الوكالات.',
+        keywords: ['أضف وكالتك','إدراج وكالة','دليل وكالات']
+      });
+
+      document.getElementById('app').innerHTML = `
+        <section style="padding:20px">
+          <div class="panel">
+            <h2>أضف وكالتك</h2>
+            <p class="lead">املأ التفاصيل أدناه لإرسال ملف وكالتك. سنراجعها ثم ندرجها في القائمة.</p>
+            <form id="addForm" style="display:grid;gap:12px">
+              <div class="field"><label>اسم الوكالة</label><input required name="name"/></div>
+              <div class="field"><label>وصف مختصر (SEO)</label><textarea required name="desc"></textarea></div>
+              <div class="field"><label>المدينة / البلد</label><input name="city"/></div>
+              <div style="display:flex;gap:10px">
+                <button class="button" type="submit">أرسل للإدراج</button>
+                <button class="badge" type="button" onclick="navigate(null,'/agencies')">إلغاء</button>
+              </div>
+            </form>
+            <div id="addResult" style="margin-top:12px;color:var(--muted)"></div>
+          </div>
+        </section>
+      `;
+
+      document.getElementById('addForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        const f = new FormData(e.target);
+        const newAgency = {
+          id: 'user-' + Date.now(),
+          name: f.get('name'),
+          tagline: 'وكالة مضافة من المستخدم',
+          city: f.get('city') || 'غير محدد',
+          rating: 4.0,
+          reviews: 0,
+          seoDescription: f.get('desc')
+        };
+        // For this static demo we store in localStorage; in production send to backend or use Netlify/Forms/Formspree
+        const stored = JSON.parse(localStorage.getItem('pendingAgencies')||'[]');
+        stored.push(newAgency);
+        localStorage.setItem('pendingAgencies', JSON.stringify(stored));
+        document.getElementById('addResult').innerText = 'تم إرسال بيانات وكالتك. سنراجعها قبل النشر. (تم حفظ نسخة محليًا)';
+        e.target.reset();
+      });
+    }
+
+    function renderContact(){
+      setMeta({
+        title: 'اتصل بنا — Viva Media Creative',
+        description: 'تواصل مع Viva Media Creative لطلبات الشراكة، إدراج وكالات، أو استفسارات عامة. نموذج تواصل مباشر.',
+        keywords: ['اتصل','تواصل','Viva Media']
+      });
+
+      document.getElementById('app').innerHTML = `
+        <section style="padding:20px">
+          <div class="panel">
+            <h2>اتصل بنا</h2>
+            <p class="lead">للتواصل السريع، املأ النموذج أو أرسل بريدًا إلى <strong>hello@vivamedia.example</strong></p>
+            <form id="contactForm" style="display:grid;gap:12px">
+              <div class="field"><label>الاسم</label><input required name="name"/></div>
+              <div class="field"><label>البريد الإلكتروني</label><input required name="email" type="email"/></div>
+              <div class="field"><label>الرسالة</label><textarea required name="message"></textarea></div>
+              <div style="display:flex;gap:10px"><button class="button" type="submit">أرسل</button></div>
+            </form>
+            <div id="contactResult" style="margin-top:12px;color:var(--muted)"></div>
+          </div>
+        </section>
+      `;
+
+      document.getElementById('contactForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        const f = new FormData(e.target);
+        // Demo behaviour: open mailto (will not work well on some environments). In production integrate Formspree or backend.
+        const subject = encodeURIComponent('رسالة من ' + f.get('name'));
+        const body = encodeURIComponent(f.get('message') + '\n\nالبريد: ' + f.get('email'));
+        const mailto = `mailto:hello@vivamedia.example?subject=${subject}&body=${body}`;
+        window.location.href = mailto;
+        document.getElementById('contactResult').innerText = 'تم فتح تطبيق البريد لإرسال الرسالة — إذا لم يفتح، أرسل رسالة إلى hello@vivamedia.example';
+      });
+    }
+
+    function renderNotFound(){
+      setMeta({title:'الصفحة غير موجودة — Viva Media Creative',description:'الصفحة المطلوبة غير موجودة.'});
+      document.getElementById('app').innerHTML = `<section style="padding:40px"><div class="panel"><h2>خطأ 404</h2><p class="lead">الصفحة غير موجودة. جرب العودة إلى <a href="#/" onclick="navigate(event,'/')">الرئيسية</a>.</p></div></section>`;
+    }
+
+    // Router
+    function router(){
+      const hash = location.hash.replace('#','') || '/';
+      const parts = hash.split('/').filter(Boolean);
+      if(hash === '/' || hash === ''){ renderHome(); return }
+      if(parts[0] === 'agencies'){ renderAgencies(); return }
+      if(parts[0] === 'agency' && parts[1]){ renderAgencyProfile(parts[1]); return }
+      if(parts[0] === 'add'){ renderAdd(); return }
+      if(parts[0] === 'contact'){ renderContact(); return }
+      renderNotFound();
+    }
+
+    window.addEventListener('hashchange', router);
+    window.addEventListener('load', ()=>{ document.getElementById('year').innerText = new Date().getFullYear(); router(); });
+  </script>
+</body>
+</html>
