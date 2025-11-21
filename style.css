@@ -150,3 +150,41 @@ footer {
     padding: 18px;
     margin-top: 40px;
 }
+/* ------------------------------- */
+/* وكالة - Hero */
+.agency-hero {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    padding: 140px 20px 100px;
+    text-align: center;
+}
+
+.agency-hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------- */
+/* محتوى الوكالة */
+.agency-content {
+    width: 90%;
+    margin: 60px auto;
+}
+
+.agency-content h2 {
+    margin-bottom: 10px;
+}
+
+.info-grid {
+    margin: 30px 0;
+    display: grid;
+    gap: 16px;
+}
+
+.info-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
